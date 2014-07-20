@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %title Portfolio
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tags
+    %link{href: "http://fonts.googleapis.com/css?family=Questrial", rel: "stylesheet", type: "text/css"}/
+  %body
+    .medium-2.columns.stretch{style: "padding: 0px"}
+      %ul.side-nav{style: "padding: 0px"}
+        %li
+          %img{src: "/assets/profile.jpeg"}/
+        %li
+          %a{href: "#"} Download CV
+        %li
+          %a{href: "#"} A bit about me
+        %li
+          %a{href: "#"} Projects
+    .large-10.columns{style: "padding: 0px"}      
+      .maincontentcontainer
+        = yield
