@@ -11,11 +11,14 @@
     .box
       .flip
         .textcontainerflip{style: "width:400px; height: 200px"}
-          .flip-front.flipfront400-230
-            %h6 A little bit about me
+          .flip-front.flipfront400-200
+            %h3 A little bit about me
+            %p I'm a Young enthusiastic junior web developer looking to expand my skill set in frontend/full stack web development as well test my creativity with design
+          .flip-back.flipback400-200 
+            %h3 What I do away from the desk
+            %p During my spare time like to hit the gym, hang out with mates and have a beer - or two.
+            %p I also have a keen interest in motorsports as well as a sense of style and keeping up to date with the latest technology trends
             
-          .flip-back.flipback400-230  
-            %p A Young enthusiastic junior/webdeveloper looking to expand his front end skill set and test his creativity
     .box
       .flip
         .textcontainerflip{style: "width:400px; height: 200px"}
@@ -33,7 +36,7 @@
       .flip
         .textcontainerflip{style: "width:400px; height: 130px"}
           .flip-front.flipfront400-130
-            %h6 Hi I'm George and I love to create cool web programs
+            %h3 I love creating cool programs
             
           .flip-back.flipback400-130  
             %h6 Contact details
@@ -61,7 +64,7 @@
     .section
       %img{src: "/assets/musicapp.jpeg.png"}/       
   .large-6.columns{style: "padding: 0px"}  
-    .section
+    .article
       %h2 Music app
       %p A music sharing website where artists can create profiles and share songs. This was the first app I developed and I use it as a great reminder of how far I have come as a developer. I made this app using Ruby on Rails, HTML 5 and CSS 3.
 
@@ -74,10 +77,11 @@
       %a{href: "http://budgie-backpackers1992.herokuapp.com"}
         %img{src: "/assets/budgiebackpackers.jpeg.png"}
     .large-6.columns 
-      %h3 Budgie Backpackers
-      %p Budgie Backpackers enables travellers on a budget to find the cheapest hostels/hotels within a searched city or current location. They can also find various attractions via a search term and see who’s checking as well as reviews. Finally they will also be able to pickup on any discounts or deals on searched attractions (work in progress)
+      .article
+        %h3 Budgie Backpackers
+        %p Budgie Backpackers enables travellers on a budget to find the cheapest hostels/hotels within a searched city or current location. They can also find various attractions via a search term and see who’s checking as well as reviews. Finally they will also be able to pickup on any discounts or deals on searched attractions (work in progress)
     .large-6.columns 
-      %h3 laungages, libareis, framworks used..
+      %h3 Languages, libraries, frameworks used
       %ul.contentLeft 
         %li Ruby on Rails 
         %li HTML 5
@@ -94,8 +98,9 @@
 .project.projectThreeWrap 
   .section
     .large-6.columns
-      %h2 Wifinder
-      %p Create and save your Wifi networks, view friends networks and share networks with your friends. This was my Second project and was developed within a group group. I developed the layout, homepage and created animation using CSS3 and javascript. 
+      .article
+        %h2 Wifinder
+        %p Create and save your Wifi networks, view friends networks and share networks with your friends. This was my Second project and was developed within a group group. I developed the layout, homepage and created animation using CSS3 and javascript. 
     .large-6.columns
       %a{href: "http://mighty-springs-1118.herokuapp.com/"}
         %img{src: "/assets/wifinder.jpeg.png"}/   
