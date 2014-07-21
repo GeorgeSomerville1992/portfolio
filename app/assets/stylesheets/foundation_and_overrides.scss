@@ -183,9 +183,14 @@ ul.side-nav{
   h3,p,h2{
     padding: 5px 5px 5px 10px;
   }
+
   
 }
-
+.alignright{
+  h2,p{
+    margin-left:10px;
+  }
+}
 
 .contentRight{
   float:right;
