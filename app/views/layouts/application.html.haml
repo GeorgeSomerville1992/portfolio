@@ -11,7 +11,7 @@
     = csrf_meta_tags
     %link{href: "http://fonts.googleapis.com/css?family=Questrial", rel: "stylesheet", type: "text/css"}/
   %body
-    .medium-2.columns.stretch{style: "padding: 0px"}
+    .medium-2.columns#sticknavbar.stretch{style: "padding: 0px"}
       %ul.side-nav{style: "padding: 0px"}
         %li
           %img{src: "/assets/profile.jpeg"}/
@@ -21,7 +21,7 @@
           %a{href: "#"} A bit about me
         %li
           %a#Project{href: "#"} Projects
-    .large-10.columns{style: "padding: 0px"}      
+    .medium-10.columns{style: "padding: 0px"}      
       .maincontentcontainer
         = yield
 
