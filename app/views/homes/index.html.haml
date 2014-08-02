@@ -3,21 +3,23 @@
     .span.transitions-enabled.large-centered.clearfix
       #container
         .box
-          .container{style: "width:800px; height:500px; background-image: url(/assets/maingrayscale.jpeg);"}
-            .innercontainer.animated
-            %header.positionleftbottom
-              %h1 George Somerville
-              %p Web Developer - Designer - Creator
+          .large-12.columns{style: "padding: 0px ;background-image: url(/assets/maingrayscale.jpeg);"}  
+            .container{style: "width:800px; height:500px; background-image: url(/assets/maingrayscale.jpeg);"}
+              .innercontainer.animated
+              %header.positionleftbottom
+                %h1 George Somerville
+                %p Web Developer - Designer - Creator
         .box
-          .flip
-            .textcontainerflip{style: "width:400px; height: 200px"}
-              .flip-front.flipfront400-200
-                %h3 A little bit about me
-                %p I'm a young enthusiastic junior web developer looking to expand my skill set in frontend/full stack web development as well test my design creativity 
-              .flip-back.flipback400-200 
-                %h3 What I do away from the desk
-                %p During my spare time I like to hit the gym, hang out with mates and have a beer - or two.
-                %p I also have a keen interest in motorsports as well as a sense of style and keeping up to date with the latest technology trends
+          .large-3.columns{style: "padding: 0px"}
+            .flip
+              .textcontainerflip{style: "width:400px; height: 200px"}
+                .flip-front.flipfront400-200
+                  %h3 A little bit about me
+                  %p I'm a young enthusiastic junior web developer looking to expand my skill set in frontend/full stack web development as well test my design creativity 
+                .flip-back.flipback400-200 
+                  %h3 What I do away from the desk
+                  %p During my spare time I like to hit the gym, hang out with mates and have a beer - or two.
+                  %p I also have a keen interest in motorsports as well as a sense of style and keeping up to date with the latest technology trends
                 
         .box
           .flip
@@ -51,16 +53,28 @@
           .infocontainer{style: "width:200px; height: 130px;"}
             %a{href: "https://www.linkedin.com/in/georgesomerville1992"}
               %img{src: "/assets/linkedin.jpeg.png", style: "margin-left:25px;"}/
-    .section.sectionbreaks#Project
-      %img{src: '/assets/arrow.jpeg.png'}
-             
+    
+    .large-12.columns{style: "padding: 0px"} 
+      .large-4.columns  
+        .arrowemptyplaceholder
+      .large-4.columns    
+        / .section.sectionbreaks
+        %img.arrowemptyplaceholder{src: '/assets/arrow.jpeg.png'}
+      .large-4.columns   
+        .arrowemptyplaceholder        
+    .large-12.columns{style: "padding: 0px"} 
+      .section.portfolio{style: "background-image: url(/assets/portfolio.jpeg.png); background-repeat:no-repeat;"}
 
-    .section.portfolio{style: "background-image: url(/assets/portfolio.jpeg.png); background-repeat:no-repeat;"}
-
-      %h1 Portfolio    
-      %p Music App - Budgie Backpackers - Wifinder
-    .section.sectionbreaks
-      %img{src: '/assets/arrow.jpeg.png'}  
+        %h1 Portfolio    
+        %p Music App - Budgie Backpackers - Wifinder
+    .large-12.columns{style: "padding: 0px"} 
+      .large-4.columns  
+        .arrowemptyplaceholder
+      .large-4.columns    
+        / .section.sectionbreaks
+        %img.arrowemptyplaceholder{src: '/assets/arrow.jpeg.png'}
+      .large-4.columns   
+        .arrowemptyplaceholder  
     .project.projectOneWrap   
       .large-6.columns{style: "padding: 0px"}         
         .section
@@ -72,8 +86,14 @@
           %p A music sharing website where artists can create profiles and share songs. This was the first app I developed and I use it as a great reminder of how far I have come as a developer. I made this app using Ruby on Rails, HTML 5 and CSS 3.
 
 
-    .section.sectionbreaks
-      %img{src: '/assets/arrow.jpeg.png'}  
+    .large-12.columns{style: "padding: 0px"} 
+      .large-4.columns  
+        .arrowemptyplaceholder
+      .large-4.columns    
+        / .section.sectionbreaks
+        %img.arrowemptyplaceholder{src: '/assets/arrow.jpeg.png'}
+      .large-4.columns   
+        .arrowemptyplaceholder  
     .project.projectTwoWrap    
       .large-12.columns{style: "padding: 0px"} 
         .section 
@@ -96,8 +116,14 @@
             %li Expedia Api
             %li Foursquare Api
             %li Yelp Api 
-    .section.sectionbreaks
-      %img{src: '/assets/arrow.jpeg.png'}        
+    .large-12.columns{style: "padding: 0px"} 
+      .large-4.columns  
+        .arrowemptyplaceholder
+      .large-4.columns    
+        / .section.sectionbreaks
+        %img.arrowemptyplaceholder{src: '/assets/arrow.jpeg.png'}
+      .large-4.columns   
+        .arrowemptyplaceholder       
     .project.projectThreeWrap 
       .section
         .large-6.columns
@@ -107,8 +133,16 @@
         .large-6.columns
           %a{href: "http://mighty-springs-1118.herokuapp.com/"}
             %img{src: "/assets/wifinder.jpeg.png"}/ 
-    .section.sectionbreaks
-      %img{src: '/assets/arrow.jpeg.png'}               
+
+
+    .large-12.columns{style: "padding: 0px"} 
+      .large-4.columns  
+        .arrowemptyplaceholder
+      .large-4.columns    
+        / .section.sectionbreaks
+        %img.arrowemptyplaceholder{src: '/assets/arrow.jpeg.png'}
+      .large-4.columns   
+        .arrowemptyplaceholder                
     .project.projectotherWrap
       .section
         .large-12.columns 
