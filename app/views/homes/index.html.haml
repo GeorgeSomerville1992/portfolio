@@ -1,4 +1,21 @@
-.medium-10.columns{style: "padding: 0px"}      
+.medium-10.columns{style: "padding: 0px"}
+  .small-width#small-width    
+    .contain-to-grid.sticky
+      %nav.top-bar{"data-topbar" => ""}
+        
+        %section.top-bar-section
+          / Right Nav Section
+          %ul.right
+            %li.active
+              %a{href: "#"} Menu 
+          / Left Nav Section
+          %ul.left
+            %li
+              %a{href: "https://www.dropbox.com/s/pq5p70qf5wt84sj/George%20James%20Somerville.docx"} Download CV
+            %li
+              %a{href: "#"} A bit about me
+            %li
+              %a{href: "#Project"} Projects   
   .maincontentcontainer
     .span.transitions-enabled.large-centered.clearfix
       #container
@@ -63,7 +80,7 @@
       .large-4.columns   
         .arrowemptyplaceholder        
     .large-12.columns{style: "padding: 0px"} 
-      .section.portfolio{style: "background-image: url(/assets/portfolio.jpeg.png); background-repeat:no-repeat;"}
+      .section.portfolio#Project{style: "background-image: url(/assets/portfolio.jpeg.png); background-repeat:no-repeat;"}
 
         %h1 Portfolio    
         %p Music App - Budgie Backpackers - Wifinder
