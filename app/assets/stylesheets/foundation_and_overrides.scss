@@ -3,10 +3,32 @@
 @import "foundation/functions";
 
 $box1color: #3c763d;
+$navcolor: #7F0710;
 body{
   
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+@media (max-width: 500px) {
+  #small-width {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  #sticknavbar,.stretch,.large-width{
+    display: none;
+  }
+}
+
+.small-width {
+  display: none;
+  background-color:#7F0710;
+}
+
+
+
+
+
 #sticknavbar{
   height:100%;
   width:100%;
@@ -16,7 +38,7 @@ body{
 .stretch{
   height:1000px;
   width:100%;
-  background-color:#7F0710;
+  background-color:$navcolor;
   
 
 }
@@ -1404,7 +1426,7 @@ $header-font-color: white;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: $navcolor; 
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1425,14 +1447,14 @@ $header-font-color: white;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
+ $topbar-link-color: white;
+ $topbar-link-color-hover: black;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg: $topbar-bg;
+ $topbar-link-bg: purple;
 // $topbar-link-bg-color-hover: #272727;
 // $topbar-link-bg-hover: #272727;
 // $topbar-link-bg-active: $primary-color;
